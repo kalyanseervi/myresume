@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATIVE CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        .nav_box {
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.395);
+            position: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .nav_bar {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            margin: auto;
+        }
+
+        .nav_logo {
+            display: flex;
+            padding: 15px 0px;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .nav_item nav {
+            justify-items: center;
+            padding: 12px 0px;
+
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav ul li {
+            padding: 5px 15px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .back_img_bg {
+            background-image: url("bg.jpg");
+            height: 700px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translate3d(0px 0px 0px);
+        }
+
+        .img_container {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            align-items: center;
+            margin: auto;
+
+        }
+
+        /* .bg_grn{
+            width: 100%;
+            height: 700px;
+            position:relative;
+            background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+        } */
+
+        .cont_about {
+            width: 50%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+
+        .imgbut img {
+            border-radius: 75px;
+            margin: 0px 0px 30px 0px;
+        }
+
+        .img_discrip {
+            font-size: 22px;
+            line-height: 60px;
+        }
+
+        .disc_nme {
+            font-size: 40px;
+        }
+
+        .disc_nme_button button {
+            padding: 15px 20px;
+            margin: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .socil_med {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: -30px 0px;
+        }
+
+        .socil_med_wd_ht {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.171);
+            align-self: center;
+        }
+
+        .ins {
+            background-color: rgba(255, 255, 255, 0.334);
+            padding: 10px 20px;
+            margin: 0px 5px;
+            border-radius: 65px;
+        }
+
+        .std_dtl {
+            width: 100%;
+            display: flex;
+            margin: auto;
+
+            justify-content: center;
+
+        }
+
+        .std_dtl_skill {
+            width: 100%;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .std_dtl_portfolio {
+            width: 100%;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about_dtl_cont {
+            width: 70%;
+            height: 300px;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 90px 0px;
+            display: flex;
+            padding: 15px;
+
+        }
+
+        .cont_abt {
+            padding: 10px;
+            width: 50%;
+
+        }
+
+        .cont_abt p {
+            padding: 10px;
+        }
+
+        .cont_abt_hed {
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 0 10px 17px 10px;
+        }
+
+        .bas_info {
+            width: 50%;
+
+            padding: 10px;
+        }
+
+        .bas_info_cnt {
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+
+        }
+
+        .bas_cnt_hed {
+            width: 30%;
+
+        }
+
+        .bas_cnt_hed_content {
+            width: 40%;
+        }
+
+        .age {
+            font-weight: bold;
+            padding: 10px 0;
+        }
+
+        .age_dta {
+            padding: 10px 0;
+        }
+
+        .bas_info_hed {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .prof_skill_cont {
+            width: 70%;
+            height: 300px;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            margin-bottom: 90px;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .edu_cont {
+            width: 70%;
+            height: 250px;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            margin-bottom: 90px;
+            display: flex;
+
+
+        }
+
+        .portfolio_cont {
+            width: 70%;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            margin-bottom: 90px;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .prof_skill_hed {
+            width: 100%;
+            font-weight: bolder;
+            font-size: 30px;
+            justify-content: center;
+
+            display: flex;
+            padding: 15px;
+
+
+        }
+
+        .prog_bar_dtl {
+            width: 40%;
+            margin: 20px;
+
+
+        }
+
+        .edu_dtl_cont {
+            width: 70%;
+        }
+
+        .edu_dtl {
+            width: 27%;
+        }
+
+        progress {
+            width: 90%;
+            background-color: rgb(131, 195, 131);
+            height: 10px;
+
+
+
+        }
+
+        .prog_label {
+            margin: 10px 0px;
+        }
+
+        .edu_info {
+            width: 90%;
+            height: 250px;
+
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 85px 0;
+            font-size: 20px;
+        }
+
+        .img_capt {
+            width: 100%;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+
+        }
+
+        .edu_dlt_cont_hed {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        iframe {
+            border: 1px solid black;
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            z-index: -1;
+
+        }
+
+        .foot_bar {
+            width: 100%;
+            height: 230px;
+
+            display: flex;
+            margin: 80px auto;
+
+
+
+
+        }
+
+        .contact {
+            width: 40%;
+            height: 600px;
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            margin: 30px auto;
+
+            background-color: white;
+
+
+        }
+
+        .font_cont {
+            width: 80%;
+            height: 200px;
+
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            line-height: 60px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont_align_bottm {
+            width: 100%;
+            display: flex;
+            padding-top: 10px;
+        }
+
+        .contact_dtl {
+            width: 95%;
+
+            margin: auto;
+
+
+        }
+
+        .contact_hed {
+            width: 100%;
+            font-size: 25px;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .contact_form {
+            width: 45%;
+
+
+        }
+
+        .contact_info {
+            width: 45%;
+            margin-left: 20px;
+
+        }
+
+        .form_hed {
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        .nme,
+        .subject,
+        .email {
+            width: 90%;
+            border: 1px solid rgba(0, 0, 0, 0.407);
+            border-radius: 15px;
+            padding: 6px;
+            margin-top: 20px;
+        }
+
+        .input_box {
+            border: none;
+        }
+
+        textarea {
+            margin-top: 20px;
+            margin-left: 10px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.453);
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #sbt {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            width: 25%;
+            font-size: large;
+            font-weight: 600;
+            letter-spacing: 4px;
+            border-radius: 10px;
+
+        }
+
+        .contact_info_adres_hed,
+        .contact_info_phone_hed,
+        .contact_info_email_hed {
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .trnsf {
+            width: 100%;
+            height: 300px;
+
+            position: absolute;
+            z-index: 1;
+            top: -1px;
+
+
+        }
+
+        .first_img {
+            position: relative;
+            z-index: 2;
+        }
+
+        .trnsf:hover{
+            width: 100%;
+            height: 300px;
+           
+            animation: potfolio_pic forwards 2s;
+        }
+        .img_dtl{
+            display: none;
+        }
+       
+        
+
+        @keyframes potfolio_pic {
+            from {
+                width: 100%;
+                height: 300px;
+            }
+
+            to {
+                width: 58%;
+                height: 170px;
+                transform: scale(1.7);
+                transform-origin: 0 0;
+                background-color: rgba(27, 29, 29, 0.379);
+                
+
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav_box">
+            <div class="nav_bar">
+                <div class="nav_logo">
+                    <div class="logo_img"></div>
+                    <div class="logo_name">CREATIVE CV</div>
+                </div>
+                <div class="nav_item">
+                    <nav>
+                        <ul>
+                            <a href="#about">
+                                <li>About</li>
+                            </a>
+                            <li>Skills</li>
+                            <a href="#portfolio">
+                                <li>Portfolio</li>
+                            </a>
+                            <a href="#">
+                                <li>Expirence</li>
+                            </a>
+                            <a href="#contact_me">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="cont_bg">
+                <div class="back_img">
+                    <div class="back_img_bg bg_grn">
+                        <div class="img_container">
+                            <div class="cont_about">
+                                <div class="imgbut"><img src="images/anthony.jpg" width="150px" height="150px"
+                                        alt="kalyan seervi" title="kalyan"></div>
+                                <div class="img_discrip">
+                                    <div class="disc_nme">Kalyan seervi</div>
+                                    <div class="disc_nme_dtl">Fresher</div>
+                                    <div class="disc_nme_button">
+                                        <a href="#contact_me"><button type="submit">Hire me</button></a>
+                                        <a href="mycv.jpg" download="Kalyan cv"><button type="submit">Download
+                                                CV</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="socil_med">
+                            <div class="socil_med_wd_ht">
+                                <div class="ins"><img src="icon/facebook.svg" alt="Follow me on facebook"
+                                        title="Follow me on facebook" width="40px" height="40px"></div>
+                                <div class="ins"><a href="https://github.com/kalyanseervi"><img src="icon/github.svg"
+                                            alt="Follow me on Github" title="Follow me on Github" width="40px"
+                                            height="40px"></a></div>
+                                <div class="ins"><a href="mailto:kalyanseerviy125@gmail.com"><img src="icon/OIP.jpg"
+                                            alt="message on gamil" title="message on gamil" width="40px"
+                                            height="40px"></a></div>
+                                <div class="ins"><img src="icon/twitter.svg" alt="Follow me on facebook"
+                                        title="Follow me on facebook" width="40px" height="40px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="std_dtl" id="about">
+                <div class="about_dtl_cont">
+                    <div class="cont_abt">
+                        <div class="cont_abt_hed">About</div>
+                        <p>Hello! I am Kalyan seervi.</p>
+                        <p>I am learner, Currently doing a Diploma in ADIT(IBM) cloud computing from Jodhpur NSTI. I’m
+                            the type of person who enjoys & thrives upon challenges both inside & outside the working
+                            environment. I feel I have a positive approach & outlook, along with being both organized &
+                            innovative within the workplace.</p>
+
+                    </div>
+                    <div class="bas_info">
+                        <div class="bas_info_hed">Basic Information</div>
+                        <div class="bas_info_cnt">
+                            <div class="bas_cnt_hed">
+                                <div class="age">Age:</div>
+                                <div class="age">EMAIL:</div>
+                                <div class="age">PHONE:</div>
+                                <div class="age">ADDRESS:</div>
+                                <div class="age">LANGUAGE:</div>
+                            </div>
+                            <div class="bas_cnt_hed_content">
+                                <div class="age_dta">22</div>
+                                <div class="age_dta">kalyanseerviy125@gamil.com</div>
+                                <div class="age_dta">7296855468</div>
+                                <div class="age_dta">Bilara jodhpur</div>
+                                <div class="age_dta">Hindi, English</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="std_dtl_skill">
+                <div class="prof_skill_hed">Professional Skills</div>
+                <div class="prof_skill_cont">
+                    <div class="prog_bar_dtl">
+
+                        <div class="prog_label">HTML</div>
+                        <div class="prog_bar"><progress id="file" value="80" max="100"> 40% </progress></div>
+
+                        <div class="prog_label">CSS</div>
+                        <div class="prog_bar"><progress id="file" value="40" max="100"> 40% </progress></div>
+                        <div class="prog_label">Hardware</div>
+                        <div class="prog_bar"><progress id="file" value="40" max="100"> 40% </progress></div>
+
+
+
+
+                    </div>
+                    <div class="prog_bar_dtl">
+
+                        <div class="prog_label">Networking</div>
+                        <div class="prog_bar"><progress id="file" value="60" max="100"> 40% </progress></div>
+
+
+                        <div class="prog_label">linux</div>
+                        <div class="prog_bar"><progress id="file" value="45" max="100"> 40% </progress></div>
+                        <div class="prog_label">JAVASCRIPT</div>
+                        <div class="prog_bar"><progress id="file" value="10" max="100"> 40% </progress></div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="std_dtl_portfolio" id="portfolio">
+                <div class="prof_skill_hed">Portfolio</div>
+                <div class="portfolio_cont">
+                    <div class="img_capt">
+                        <div class="first_img"><img src="images/project-1.jpg" alt="Image" width="100%"
+                                height="300px" />
+                            <div class="trnsf"><div class="img_dtl">Front-end Web</div></div>
+                        </div>
+                        <div><img src="images/project-2.jpg" alt="Image" width="100%" height="300px" /></div>
+                    </div>
+                    <div class="img_capt">
+                        <div><img src="images/project-3.jpg" alt="Image" width="100%" height="300px" /></div>
+                        <div><img src="images/project-4.jpg" alt="Image" width="100%" height="300px" /></div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+            <div class="std_dtl_skill educat">
+                <div class="prof_skill_hed">Education</div>
+                <div class="edu_cont">
+                    <div class=" edu_dtl">
+
+                        <div class="edu_info">
+                            <div>
+                                <p>Secondary Education</p> 12<sup>th</sup> 2018
+                            </div>
+                            <div>
+                                <p>Borad: RBSE</p>
+                                <p></p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class=" edu_dtl_cont">
+                        <div class="edu_dlt_cont_hed">Secondary Education</div>
+                        <p>I have done secondary education in commerce subject from Alok Sr. Secondary School bilara
+                            jodhpur.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="std_dtl_skill educat">
+
+                <div class="edu_cont">
+                    <div class=" edu_dtl">
+
+                        <div class="edu_info">
+                            <div>
+                                <p>Under Graduation</p> B.COM - 2021
+                            </div>
+                            <div>
+                                <p>University: JNVU</p>
+                                <p>(Jodhpur)</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class=" edu_dtl_cont">
+                        <div class="edu_dlt_cont_hed">Under Graduation(UG)</div>
+                        <p>I did my undergraduate(UG) from JNVU University,Jodhpur in B.COM subject.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="std_dtl_skill educat">
+
+
+
+            </div>
+            <div class="std_dtl_skill educat">
+                <div class="prof_skill_hed">CERTIFICATE</div>
+                <div class="edu_cont">
+                    <div class=" edu_dtl">
+
+                        <div class="edu_info">
+                            <div>ITI (COPA) - 2022</div>
+                            <div>
+                                <p>COMPUTER OPERATOR AND PROGRAMMING ASSISTANT</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class=" edu_dtl_cont">
+                        <div class="edu_dlt_cont_hed">ITI- Copa</div>
+                        <p>I did ITI from Govt. ITI bilara,Jodhpur in COPA trade.In copa trade i got basic knowledge of
+                            computer.</p>
+
+                    </div>
+
+                </div>
+                <div class="edu_cont">
+                    <div class=" edu_dtl">
+
+                        <div class="edu_info">
+                            <div>Introduction to Cybersecurity</div>
+                            <div>
+                                <p>(Cisco Networking Academy)</p>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class=" edu_dtl_cont">
+                        <div class="edu_dlt_cont_hed">Introduction to Cybersecurity</div>
+                        <p>Introduction to Cybersecurity course, and demonstrating the ability to explain the
+                            following: <li>Global implications of cyber threats</li>
+                            <li> Ways in which networks are vulnerable to attack</li>
+                            <li>Impact of cyber-attacks on industries</li>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+            </iframe>
+            <div class="contact" id="contact_me">
+                <div class="contact_dtl">
+                    <div class="contact_hed">Contact Me</div>
+                    <div class="cont_align_bottm">
+
+
+                        <div class="contact_form">
+                            <form action="get">
+                                <div class="form_hed">Feel free to contact me</div>
+                                <div class="nme">
+                                    <input type="text" name="name" id="" class="input_box" placeholder="Name">
+                                </div>
+                                <div class="subject">
+                                    <input type="text" name="subject" id="" class="input_box" placeholder="Subject">
+                                </div>
+                                <div class="email">
+                                    <input type="email" name="email" id="" class="input_box"
+                                        placeholder="demo@gmail.com">
+                                </div>
+                                <div class="txt_area">
+                                    <textarea name="txt_area" id="" cols="30" rows="5"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" name="submit" id="sbt" value="Send">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact_info">
+                            <div class="contact_info_dtl">
+                                <div class="contact_info_adres_hed">Address</div>
+                                <div class="contact_info_adres">Near bus stand,Pichiyak,block: Bilara, Dist. :
+                                    Jodhpur(Rajasthan)</div>
+                                <div class="contact_info_phone_hed">Phone</div>
+                                <div class="contact_info_phone">7296855468</div>
+                                <div class="contact_info_email_hed">Email</div>
+                                <div class="contact_info_email">kalyanseerviy125@gmail.com</div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <footer>
+            <div class="foot_bar">
+                <div class="font_cont">
+                    <div class="foot_dtl">
+                        <div class="disc_nme">Kalyan seervi</div>
+                        <div class="disc_nme_dtl">© Creative CV. All rights reserved.
+                            Design - Techcart.com</div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
