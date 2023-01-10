@@ -61,7 +61,7 @@ a {
 }
 
 .back_img_bg {
-    background-image: url("images/bg.jpg");
+    background-image: url("../bg.jpg");
     height: 700px;
     width: 100%;
     background-repeat: no-repeat;
