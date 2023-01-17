@@ -56,7 +56,7 @@ nav ul li {
 
 }
 
-a {
+nav ul  a {
     text-decoration: none;
 }
 
@@ -171,7 +171,7 @@ a {
 
 .about_dtl_cont {
     width: 70%;
-    height: 300px;
+    height: auto;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
     margin: 90px 0px;
     display: flex;
@@ -233,7 +233,7 @@ a {
 
 .prof_skill_cont {
     width: 70%;
-    height: 300px;
+    height: auto;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     margin-bottom: 90px;
@@ -244,7 +244,7 @@ a {
 
 .edu_cont {
     width: 70%;
-    height: 250px;
+    height: auto;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     margin-bottom: 90px;
@@ -284,10 +284,12 @@ a {
 
 .edu_dtl_cont {
     width: 70%;
+    height: auto;
 }
 
 .edu_dtl {
     width: 27%;
+   
 }
 
 progress {
@@ -305,7 +307,7 @@ progress {
 
 .edu_info {
     width: 90%;
-    height: 250px;
+    height: 100%;
 
     background-color: green;
     color: white;
@@ -326,6 +328,12 @@ progress {
     font-size: 25px;
     font-weight: bold;
     margin: 20px;
+    text-transform: capitalize;
+   
+}
+a{
+    color: black;
+   
 }
 
 iframe {
@@ -448,7 +456,7 @@ textarea {
     width: 25%;
     font-size: large;
     font-weight: 600;
-    
+    letter-spacing: 4px;
     border-radius: 10px;
 
 }
